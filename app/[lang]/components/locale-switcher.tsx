@@ -1,12 +1,13 @@
 'use client'
 
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
+import { useRouter } from 'next/navigation'
 import { i18n } from '@/i18n.config'
+import { ChangeEvent } from 'react'
 
 export default function LocaleSwitcher() {
   const pathName = usePathname()
+  const router = useRouter();
 
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/'
@@ -15,20 +16,20 @@ export default function LocaleSwitcher() {
     return segments.join('/')
   }
 
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const locale = e.target.value;
+    router.push(redirectedPathName(locale));
+  };
+
   return (
-    <ul className='flex gap-x-3'>
-      {i18n.locales.map(locale => {
-        return (
-          <li key={locale}>
-            <Link
-              href={redirectedPathName(locale)}
-              className='rounded-md border bg-black px-3 py-2 text-white'
-            >
-              {locale}
-            </Link>
-          </li>
-        )
-      })}
-    </ul>
+  <div className="w-24 max-w-xs mx-auto">
+    <select onChange={handleChange} className="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      {i18n.locales.map((locale) => (
+        <option key={locale} value={locale} className="text-gray-900">
+          {locale}
+        </option>
+      ))}
+    </select>
+  </div>
   )
 }
