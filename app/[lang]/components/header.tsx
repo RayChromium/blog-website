@@ -8,16 +8,13 @@ export default async function Header({ lang }: { lang: Locale }) {
 
   return (
     <header className='py-6'>
-      <nav className='container flex items-center justify-between'>
-        <ul className='flex gap-x-8'>
-          <li>
-            <Link href={`/${lang}`}>{navigation.home}</Link>
-          </li>
-          <li>
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
-          </li>
-        </ul>
-        <LocaleSwitcher />
+      <nav className='relative container mx-auto p-6'>
+        <div className="flex items-center justify-between space-x-4">
+          <Link href={`/${lang}`} className='hover:text-darkGrayishBlue'>{navigation.home}</Link>
+          <Link href={`/${lang}/about`} className='hover:text-darkGrayishBlue'>{navigation.about}</Link>
+          <Link href={`/${lang}/blogs`} className='hover:text-darkGrayishBlue'>{navigation.blogs}</Link>
+          <LocaleSwitcher />
+        </div>
       </nav>
     </header>
   )
