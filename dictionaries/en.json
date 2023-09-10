@@ -1,16 +1,21 @@
 {
   "navigation": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "blogs": "Blogs"
   },
   "page": {
     "home": {
-      "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
+      "title": "Wandering Ray",
+      "description": "Hi, this is the place where I share trivialities of life and rambling some personal thoughts. It's best not to expect anything particularly serious here, all you can find here might just be some bullshit that doesn't make sense at all."
     },
     "about": {
-      "title": "About Us",
-      "description": "This is the about page"
+      "title": "Who am I? What's this website?",
+      "description": "Hi, this is my website where I share my writing and podcast content. It's not anything too serious; it's just a collection of book/movie reviews, travel diaries, some anecdotes from daily life, and my own reflections. I don't expect a lot of people to visit this website; it's mainly a way for me to improve my thinking skills and communication abilities through practicing writing and speaking. However, if my shared content can be helpful to you, that would be even better."
+    },
+    "blogs": {
+      "title": "Recent posts",
+      "description": "Here are all the posts"
     }
   }
 }
