@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { i18n } from '@/i18n.config'
-import { ChangeEvent, useState } from 'react'
+import { useState } from 'react'
 
 type targetSlug = {
     urlSlug_zh  :string,
@@ -59,13 +59,6 @@ export default function LocaleSwitcher( {urlSlugs}: { urlSlugs: targetSlug} ) {
 
   return (
   <div id='locale-switcher' className="fixed w-24 max-w-xs ml-auto mr-0">
-    {/* <select aria-label="Language:" onChange={handleChange} className="w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-      {i18n.locales.map((locale) => (
-        <option key={locale} value={locale} className="text-gray-900">
-          {i18n.localeNames[locale]}
-        </option>
-      ))}
-    </select> */}
     <button className="bg-blue-500 text-darkGrayishBlue px-2 py-1 rounded" 
               onClick={toggleMenu}>A/أ/あ: Language</button>
       {isOpen && (
