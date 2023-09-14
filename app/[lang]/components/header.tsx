@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
-import LocaleSwitcher from './locale-switcher'
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
@@ -13,7 +12,6 @@ export default async function Header({ lang }: { lang: Locale }) {
           <Link href={`/${lang}`} className='hover:text-darkGrayishBlue'>{navigation.home}</Link>
           <Link href={`/${lang}/about`} className='hover:text-darkGrayishBlue'>{navigation.about}</Link>
           <Link href={`/${lang}/blogs`} className='hover:text-darkGrayishBlue'>{navigation.blogs}</Link>
-          <LocaleSwitcher />
         </div>
       </nav>
     </header>

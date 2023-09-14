@@ -13,6 +13,7 @@ import {
   GET_INFIVIDUAL_POST_JP 
 } from '@/graphql/queries'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
+import LocaleSwitcher from '../../components/locale-switcher'
 
 type individualPostContent = { 
   attributes:{
@@ -89,19 +90,37 @@ export default async function Blogs({
   console.log('individual post data:',data.blogs.data);
   const blogAttr = data.blogs.data[0]?.attributes;
 
+  const targetSlugs = {
+    urlSlug_zh  :blogAttr.urlSlug_zh,
+    urlSlug_en  :blogAttr.urlSlug_en,
+    urlSlug_no  :blogAttr.urlSlug_no,
+    urlSlug_ar  :blogAttr.urlSlug_ar,
+    urlSlug_es  :blogAttr.urlSlug_es,
+    urlSlug_fi  :blogAttr.urlSlug_fi,
+    urlSlug_sv  :blogAttr.urlSlug_sv,
+    urlSlug_jp  :blogAttr.urlSlug_jp,
+  }
+
   if( lang === 'zh' ) {
     return (
+    <>
+    <LocaleSwitcher urlSlugs={targetSlugs} />
       <div className='container'>
         <h1 className='text-3xl font-bold'>{blogAttr?.title_zh}</h1>
         <p className='text-gray-500'>{blogAttr?.content_cn}</p>
       </div>
+    </>
     )
   } else if ( lang === 'en' ) {
     return (
-      <div className='container'>
-        <h1 className='text-3xl font-bold'>{blogAttr?.title_en}</h1>
-        <p className='text-gray-500'>{blogAttr?.content_en}</p>
-      </div>
+      <>
+        <LocaleSwitcher urlSlugs={targetSlugs} />
+        <div className='container'>
+          <h1 className='text-3xl font-bold'>{blogAttr?.title_en}</h1>
+          <p className='text-gray-500'>{blogAttr?.content_en}</p>
+        </div>
+      </>
+      
     )
   }
   

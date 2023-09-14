@@ -3,6 +3,7 @@ import { getDictionary } from '@/lib/dictionary'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 import { GET_ALL_POSTS } from '@/graphql/queries'
 import Link from 'next/link'
+import LocaleSwitcher from '../components/locale-switcher'
 
 type postCardContent = { 
   attributes:{
@@ -29,9 +30,22 @@ export default async function Blogs({
     query: GET_ALL_POSTS
   } );
   console.log('Home data:',data.blogs.data);
+  const emptySlugs = {
+    urlSlug_zh  :'',
+    urlSlug_en  :'',
+    urlSlug_no  :'',
+    urlSlug_ar  :'',
+    urlSlug_es  :'',
+    urlSlug_fi  :'',
+    urlSlug_sv  :'',
+    urlSlug_jp  :'',
+  }
+
 
   return (
-    <div className='container'>
+    <>
+    <LocaleSwitcher urlSlugs={emptySlugs} />
+      <div className='container'>
       <h1 className='text-3xl font-bold'>{page.blogs.title}</h1>
       <p className='text-gray-500'>{page.blogs.description}</p>
       <section className='container'>
@@ -59,5 +73,7 @@ export default async function Blogs({
         } ) }
       </section>
     </div>
+    </>
+    
   )
 }
