@@ -10,9 +10,34 @@ type postCardContent = {
      description_en: string, 
      title_en: string, 
      urlSlug_en: string,
+
      description_zh: string, 
      title_zh: string, 
      urlSlug_zh: string,
+
+     description_no: string, 
+     title_no: string, 
+     urlSlug_no: string,
+
+     description_ar: string, 
+     title_ar: string, 
+     urlSlug_ar: string,
+
+     description_esp: string, 
+     title_esp: string, 
+     urlSlug_esp: string,
+
+     description_fi: string, 
+     title_fi: string, 
+     urlSlug_fi: string,
+
+     description_sv: string, 
+     title_sv: string, 
+     urlSlug_sv: string,
+
+     description_jp: string, 
+     title_jp: string, 
+     urlSlug_jp: string,
     } 
 }
 
@@ -65,7 +90,25 @@ export default async function Blogs({
               <Link href={`/${lang}/blogs/${val.attributes.urlSlug_zh}`} key={i}>
                 <div >
                   <h3>{val.attributes.title_zh}</h3>
-                  <p>{val.attributes.description_en? val.attributes.description_en : ''}</p>
+                  <p>{val.attributes.description_zh? val.attributes.description_zh : ''}</p>
+                </div>
+              </Link>
+            )
+          } else if ( lang == 'no' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_no}`} key={i}>
+                <div >
+                  <h3>{val.attributes.title_no}</h3>
+                  <p>{val.attributes.description_no? val.attributes.description_no : ''}</p>
+                </div>
+              </Link>
+            )
+          } else if ( lang == 'ar' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_ar}`} key={i}>
+                <div >
+                  <h3>{val.attributes.title_ar}</h3>
+                  <p>{val.attributes.description_ar? val.attributes.description_ar : ''}</p>
                 </div>
               </Link>
             )

@@ -1,0 +1,21 @@
+{
+    "navigation": {
+      "home": "Hem",
+      "about": "Om",
+      "blogs": "Bloggar"
+    },
+    "page": {
+      "home": {
+        "title": "Vandrande Ray",
+        "description": "Hej, detta är platsen där jag delar trivialiteter i livet och divagerar några personliga tankar. Det är bäst att inte förvänta sig något allvarligt här, allt du kan hitta här kan bara vara något nonsens som inte alls har någon mening."
+      },
+      "about": {
+        "title": "Vem är jag? Vad är denna webbplats?",
+        "description": "Hej, detta är min webbplats där jag delar mina skrifter och podcastinnehåll. Det är inte alltför seriöst; det är bara en samling av bok/filmrecensioner, resejournaler, några vardagliga anekdoter, och mina egna reflektioner. Jag förväntar mig inte att många människor kommer att besöka denna webbplats; det är främst ett sätt för mig att förbättra mina tänkande och kommunikationsfärdigheter genom att öva på att skriva och tala. Men, om mitt delade innehåll kan vara till hjälp för dig, skulle det vara ännu bättre."
+      },
+      "blogs": {
+        "title": "Senaste inläggen",
+        "description": "Här är alla inlägg"
+      }
+    }
+  }

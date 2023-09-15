@@ -1,0 +1,21 @@
+{
+    "navigation": {
+      "home": "Hjem",
+      "about": "Om",
+      "blogs": "Blogger"
+    },
+    "page": {
+      "home": {
+        "title": "Wandering Ray",
+        "description": "Hei, dette er stedet der jeg deler trivialiteter i livet og divagere noen personlige tanker. Det er best å ikke forvente noe særlig seriøst her, alt du kan finne her kan bare være noe tull som ikke gir mening i det hele tatt."
+      },
+      "about": {
+        "title": "Hvem er jeg? Hva er dette nettstedet?",
+        "description": "Hei, dette er nettstedet mitt hvor jeg deler mine skriverier og podkastinnhold. Det er ikke noe altfor seriøst; det er bare en samling av bok/film anmeldelser, reisedagbøker, noen anekdoter fra dagliglivet, og mine egne refleksjoner. Jeg forventer ikke at mange mennesker vil besøke dette nettstedet; hovedsakelig er det en måte for meg å forbedre mine tenkeferdigheter og kommunikasjonsevner gjennom å øve på skriving og tale. Imidlertid, hvis mitt delte innhold kan være til hjelp for deg, ville det være enda bedre."
+      },
+      "blogs": {
+        "title": "Nylige innlegg",
+        "description": "Her er alle innleggene"
+      }
+    }
+  }

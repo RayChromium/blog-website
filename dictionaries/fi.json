@@ -1,0 +1,21 @@
+{
+    "navigation": {
+      "home": "Koti",
+      "about": "Tietoa",
+      "blogs": "Blogit"
+    },
+    "page": {
+      "home": {
+        "title": "Wandering Ray",
+        "description": "Hei, tämä on paikka, jossa jaan elämän triviaalisuuksia ja pohdin joitakin henkilökohtaisia ajatuksia. On parasta olla odottamatta mitään erityisen vakavaa täällä, kaikki mitä voit löytää täältä saattaa olla vain jotakin hölynpölyä, joka ei tee mitään järkeä."
+      },
+      "about": {
+        "title": "Kuka minä olen? Mikä tämä verkkosivu on?",
+        "description": "Hei, tämä on verkkosivuni, jossa jaan kirjoituksiani ja podcast-sisältöäni. Tämä ei ole mitään liian vakavaa; se on vain kokoelma kirja-/elokuva-arvosteluja, matkapäiväkirjoja, joitakin jokapäiväisen elämän anekdootteja ja omia pohdintojani. En odota, että paljon ihmisiä vierailisi tällä verkkosivulla; se on pääasiassa tapa minulle parantaa ajattelu- ja viestintätaitojani kirjoittamisen ja puhumisen harjoittelun kautta. Kuitenkin, jos jaettu sisältöni voi olla avuksi sinulle, se olisi vielä parempi."
+      },
+      "blogs": {
+        "title": "Viimeisimmät julkaisut",
+        "description": "Tässä ovat kaikki julkaisut"
+      }
+    }
+  }

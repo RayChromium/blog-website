@@ -1,0 +1,21 @@
+{
+    "navigation": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "blogs": "Blogs"
+    },
+    "page": {
+      "home": {
+        "title": "Wandering Ray",
+        "description": "Hola, este es el lugar donde comparto trivialidades de la vida y divago algunos pensamientos personales. Es mejor no esperar nada particularmente serio aquí, todo lo que puedes encontrar aquí podría ser solo alguna tontería que no tiene sentido en absoluto."
+      },
+      "about": {
+        "title": "¿Quién soy? ¿Qué es este sitio web?",
+        "description": "Hola, este es mi sitio web donde comparto mis escritos y contenido de podcast. No es nada demasiado serio; es solo una colección de reseñas de libros/películas, diarios de viaje, algunas anécdotas de la vida diaria y mis propias reflexiones. No espero que muchas personas visiten este sitio web; es principalmente una forma para mí de mejorar mis habilidades de pensamiento y comunicación a través de la práctica de la escritura y el habla. Sin embargo, si mi contenido compartido puede ser útil para ti, eso sería aún mejor."
+      },
+      "blogs": {
+        "title": "Publicaciones recientes",
+        "description": "Aquí están todas las publicaciones"
+      }
+    }
+  }

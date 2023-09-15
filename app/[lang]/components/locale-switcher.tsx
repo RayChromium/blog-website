@@ -45,7 +45,7 @@ export default function LocaleSwitcher( {urlSlugs}: { urlSlugs: targetSlug} ) {
         segments[3] = urlSlugs.urlSlug_fi;
       }else if ( locale === 'sv' ) {
         segments[3] = urlSlugs.urlSlug_sv;
-      }else if ( locale === 'jp' ) {
+      }else if ( locale === 'ja' ) {
         segments[3] = urlSlugs.urlSlug_jp;
       }
     }
