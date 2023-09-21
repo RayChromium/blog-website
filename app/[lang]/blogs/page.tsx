@@ -71,46 +71,130 @@ export default async function Blogs({
     <>
     <LocaleSwitcher urlSlugs={emptySlugs} />
       <div className='container'>
-      <h1 className='text-3xl font-bold'>{page.blogs.title}</h1>
-      <p className='text-gray-500'>{page.blogs.description}</p>
+      <h1 className='text-3xl py-2 font-bold'>{page.blogs.title}</h1>
+      <p className='text-gray-500 py-2'>{page.blogs.description}</p>
       <section className='container'>
         { data.blogs.data.map( ( val: postCardContent, i: number ) => {
           if ( lang === 'en' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_en}`} key={i}>
-                <div>
-                  <h3>{val.attributes.title_en}</h3>
-                  <p>{val.attributes.description_en? val.attributes.description_en : ''}</p>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_en}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+                <div className="flex flex-col justify-between flex-grow p-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {val.attributes.title_en}
+                    </h3>
+                    <p className="mt-2 text-base text-gray-500">
+                      {val.attributes.description_en ? val.attributes.description_en : ''}
+                    </p>
+                  </div>
                 </div>
               </Link>
               
             )
           } else if ( lang == 'zh' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_zh}`} key={i}>
-                <div >
-                  <h3>{val.attributes.title_zh}</h3>
-                  <p>{val.attributes.description_zh? val.attributes.description_zh : ''}</p>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_zh}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_zh}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_zh ? val.attributes.description_zh : ''}
+                  </p>
                 </div>
-              </Link>
+              </div>
+            </Link>
             )
           } else if ( lang == 'no' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_no}`} key={i}>
-                <div >
-                  <h3>{val.attributes.title_no}</h3>
-                  <p>{val.attributes.description_no? val.attributes.description_no : ''}</p>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_no}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_no}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_no ? val.attributes.description_no : ''}
+                  </p>
                 </div>
-              </Link>
+              </div>
+            </Link>
             )
           } else if ( lang == 'ar' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_ar}`} key={i}>
-                <div >
-                  <h3>{val.attributes.title_ar}</h3>
-                  <p>{val.attributes.description_ar? val.attributes.description_ar : ''}</p>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_ar}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_ar}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_ar ? val.attributes.description_ar : ''}
+                  </p>
                 </div>
-              </Link>
+              </div>
+            </Link>
+            )
+          }  else if ( lang == 'es' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_esp}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_esp}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_esp ? val.attributes.description_esp : ''}
+                  </p>
+                </div>
+              </div>
+            </Link>
+            )
+          }  else if ( lang == 'fi' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_fi}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_fi}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_fi ? val.attributes.description_fi : ''}
+                  </p>
+                </div>
+              </div>
+            </Link>
+            )
+          }  else if ( lang == 'sv' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_sv}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_sv}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_sv ? val.attributes.description_sv : ''}
+                  </p>
+                </div>
+              </div>
+            </Link>
+            )
+          }  else if ( lang == 'ja' ) {
+            return (
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_jp}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {val.attributes.title_jp}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-500">
+                    {val.attributes.description_jp ? val.attributes.description_jp : ''}
+                  </p>
+                </div>
+              </div>
+            </Link>
             )
           }
         } ) }
