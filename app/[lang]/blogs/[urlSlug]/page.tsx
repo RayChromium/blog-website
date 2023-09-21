@@ -102,7 +102,7 @@ export default async function Blogs({
     <>
     <LocaleSwitcher urlSlugs={targetSlugs} />
       <div className='container'>
-        <h1 className='text-3xl font-bold'>{blogAttr?.title_zh}</h1>
+        <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_zh}</h1>
         <MDXRemote source={blogAttr?.content_cn}/>
       </div>
     </>
@@ -112,7 +112,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_en}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_en}</h1>
           <MDXRemote source={blogAttr?.content_en}/>
         </div>
       </>
@@ -122,7 +122,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_no}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_no}</h1>
           <MDXRemote source={blogAttr?.content_no}/>
         </div>
       </>
@@ -132,7 +132,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_ar}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_ar}</h1>
           <MDXRemote source={blogAttr?.content_ar}/>
         </div>
       </>
@@ -142,7 +142,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_esp}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_esp}</h1>
           <MDXRemote source={blogAttr?.content_esp}/>
         </div>
       </>
@@ -152,7 +152,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_fi}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_fi}</h1>
           <MDXRemote source={blogAttr?.content_fi}/>
         </div>
       </>
@@ -162,7 +162,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_sv}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_sv}</h1>
           <MDXRemote source={blogAttr?.content_sv}/>
         </div>
       </>
@@ -172,7 +172,7 @@ export default async function Blogs({
       <>
         <LocaleSwitcher urlSlugs={targetSlugs} />
         <div className='container'>
-          <h1 className='text-3xl font-bold'>{blogAttr?.title_jp}</h1>
+          <h1 className='text-3xl py-2 font-bold'>{blogAttr?.title_jp}</h1>
           <MDXRemote source={blogAttr?.content_jp}/>
         </div>
       </>
