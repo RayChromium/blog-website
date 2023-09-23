@@ -48,7 +48,7 @@ export default async function Blogs({
 }) {
   const { page } = await getDictionary(lang)
   const client = new ApolloClient({
-    uri:"http://192.168.56.1:1337/graphql",
+    uri:process.env.CSM_URL,
     cache: new InMemoryCache(),
   });
   const {data} = await client.query( {
