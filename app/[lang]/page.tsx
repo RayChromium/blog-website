@@ -31,7 +31,7 @@ export default async function Home({
             <p className='text-gray-500'>{page.home.description}</p>
           </div>
           <div className="md:px-12 md:width-1/2">
-            <Image src={coolPic} alt='cool photo' width={150}/>
+            <Image src={coolPic} alt='cool photo' width={250} className='rounded-full object-cover'/>
           </div>
         </div>
       </section>
