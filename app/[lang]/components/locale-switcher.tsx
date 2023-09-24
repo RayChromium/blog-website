@@ -57,7 +57,7 @@ export default function LocaleSwitcher( {urlSlugs}: { urlSlugs: targetSlug} ) {
   };
 
   return (
-  <div id='locale-switcher' className="fixed right-0 top-0 m-4">
+  <div id='locale-switcher' className="fixed right-0 top-40 m-4">
     <button className="bg-purple-700 hover:bg-purple-900 text-white px-2 py-1 rounded-full flex items-center" onClick={toggleMenu}>
       <span className="mr-1">🌐</span>
       {isOpen ? 'Close' : 'Language'}
