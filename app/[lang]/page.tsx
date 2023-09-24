@@ -1,7 +1,7 @@
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './components/locale-switcher'
-import coolPic from '@/public/IMG_20230809_165910.jpg'
+import coolPic from '@/public/IMG_20230809_165910.png'
 import Image from 'next/image'
 
 export default async function Home({
