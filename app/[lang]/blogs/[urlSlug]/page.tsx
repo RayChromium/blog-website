@@ -58,7 +58,7 @@ export default async function Blogs({
   params: { lang: Locale, urlSlug: string }
 }) {
   const client = new ApolloClient({
-    uri:"http://192.168.56.1:1337/graphql",
+    uri:process.env.CSM_URL,
     cache: new InMemoryCache(),
   });
 
