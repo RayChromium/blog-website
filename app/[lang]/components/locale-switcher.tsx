@@ -49,7 +49,6 @@ export default function LocaleSwitcher( {urlSlugs}: { urlSlugs: targetSlug} ) {
         segments[3] = urlSlugs.urlSlug_jp;
       }
     }
-    console.log(segments)
     return segments.join('/')
   }
 

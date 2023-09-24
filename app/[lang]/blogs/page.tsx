@@ -54,7 +54,6 @@ export default async function Blogs({
   const {data} = await client.query( {
     query: GET_ALL_POSTS
   } );
-  console.log('Home data:',data.blogs.data);
   const emptySlugs = {
     urlSlug_zh  :'',
     urlSlug_en  :'',

@@ -1,7 +1,7 @@
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './components/locale-switcher'
-import coolPic from '@/public/IMG_20230809_165910.jpg'
+import coolPic from '@/public/IMG_20230809_165910.ico'
 import Image from 'next/image'
 
 export default async function Home({
@@ -31,7 +31,7 @@ export default async function Home({
             <p className='text-gray-500'>{page.home.description}</p>
           </div>
           <div className="md:px-12 md:width-1/2">
-            <Image src={coolPic} alt='cool photo' width={450}/>
+            <Image src={coolPic} alt='cool photo' width={150}/>
           </div>
         </div>
       </section>
