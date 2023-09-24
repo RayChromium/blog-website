@@ -76,7 +76,7 @@ export default async function Blogs({
         { data.blogs.data.map( ( val: postCardContent, i: number ) => {
           if ( lang === 'en' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_en}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_en}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
                 <div className="flex flex-col justify-between flex-grow p-6">
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900">
@@ -92,7 +92,7 @@ export default async function Blogs({
             )
           } else if ( lang == 'zh' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_zh}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_zh}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -107,7 +107,7 @@ export default async function Blogs({
             )
           } else if ( lang == 'no' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_no}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_no}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -122,7 +122,7 @@ export default async function Blogs({
             )
           } else if ( lang == 'ar' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_ar}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_ar}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -137,7 +137,7 @@ export default async function Blogs({
             )
           }  else if ( lang == 'es' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_esp}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_esp}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -152,7 +152,7 @@ export default async function Blogs({
             )
           }  else if ( lang == 'fi' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_fi}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_fi}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -167,7 +167,7 @@ export default async function Blogs({
             )
           }  else if ( lang == 'sv' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_sv}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_sv}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -182,7 +182,7 @@ export default async function Blogs({
             )
           }  else if ( lang == 'ja' ) {
             return (
-              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_jp}`} className="flex flex-col overflow-hidden rounded-lg hover:shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
+              <Link href={`/${lang}/blogs/${val.attributes.urlSlug_jp}`} className="flex flex-col overflow-hidden rounded-lg my-6 shadow-lg transform hover:scale-95 transition-all duration-200 ease-in-out" key={i}>
               <div className="flex flex-col justify-between flex-grow p-6">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-gray-900">
